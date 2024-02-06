@@ -1,0 +1,167 @@
+.card-productos-container {
+  margin: 5vh auto;
+}
+.card-productos {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 5vh auto;
+  font-size: 25px;
+}
+
+.card-productos img { 
+  margin-top: 40px;
+  width: 250px;
+  height: 250px;
+}
+
+.card-productos button {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color: white;
+  background-color: #1bcb7f;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+}
+.card-productos button:hover {
+  opacity: 0.7;
+}
+
+/* cart button */
+
+.cart-btn {
+  position: fixed;
+  top: 90vh;
+  right: 40px;
+  background-color: rgb(25, 25, 25);
+  padding: 10px;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.cart-btn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+/*modal*/
+.modal-overlay {
+  display: none;
+  background-color:
+  rgba(e, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+ }
+                                        
+.modal-container {
+ display: none;
+ background-color:
+                     #ffffff;
+  box-shadow: 0px 3px 6px
+                          #00000029;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ max-width: 500рх;
+ width: 100%;
+  z-index: 1;
+ max-height: 80vh;
+ overflow-y: auto;
+}
+
+/* modal body */
+
+.producto{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.producto-img {
+  height: 80px;
+  margin-right: 20px;
+  width: 80px;
+}
+
+.producto-info {
+  flex: 1;
+  text-align: left;
+}
+
+.producto-info h4 {
+  margin-top: 35px;
+}
+
+.cantidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 4em;
+}
+
+.cantidad-btn-decremento,
+.cantidad-btn-incremento {
+  color: #333333;
+  cursor: pointer;
+  font-size: 16px;
+  width: 28px;
+  font-weight: bold;
+}
+
+.cantidad.input {
+  color: #333333;
+  font-size: 16px;
+  padding: 10 10px;
+  text-align: center;
+  width: 50px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 500px) {
+  .producto-img {
+    display: none;
+  }
+  .modal-body {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+};
+  
+.precio {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+  
+.eliminar-producto {
+  margin-top: 20px;
+  margin-left: 2em;
+  cursor: pointer;
+}
+
+.modal-footer {
+ text-align: center;
+}
+
+.precio-total{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
